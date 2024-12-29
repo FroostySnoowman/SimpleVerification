@@ -1,0 +1,44 @@
+General:
+    TOKEN: "" # bot token
+    ACTIVITY: "watching" # playing, watching, listening, streaming
+    DOING_ACTIVITY: "Verification" # The text that will be displayed in the activity
+    STREAMING_ACTIVITY_TWITCH_URL: "" # The URL of the twitch stream, if ACTIVITY is set to streaming
+    STATUS: "online" # online, idle, dnd, invisible
+
+    EMBED_COLOR: "#9C27B0" # embed color
+
+    GUILD_ID: 1234 # guild id the bot runs in
+
+Verification:
+    EMOJI: "✅" # The emoji that will be displayed on the button
+    LABEL: "Verify" # The text that will be displayed on the button
+    VERIFIED_ROLE_ID: 1234 # role id that will be given to verified users
+    UNVERIFIED_ROLE_ID: 1234 # role id that will be given to unverified users
+    STAFF_CHANNEL_ID: 1234 # channel id where the verification messages will be sent
+    STAFF_ROLE_ID: 1234 # role id that will be able to verify users
+
+    Modal:
+        TITLE: "Verification Form" # up to 45 characters
+        QUESTIONS: # up to 5 questions
+            - QUESTION: "Business name?" # up to 45 characters
+              PLACEHOLDER: "Enter your business name" # up to 100 characters
+            - QUESTION: "Business email?"
+              PLACEHOLDER: "Enter your business email"
+              REQUIREMENT: "@" # must include an @ in the answer
+              REQUIREMENT_DESCRIPTION: "The **Business Email** field must include a valid email." # description if REQUIREMENT isn't met
+            - QUESTION: "Business website?"
+              PLACEHOLDER: "Enter your business website URL"
+            - QUESTION: "Country"
+              PLACEHOLDER: "Enter your country of operation"
+            - QUESTION: "Notes"
+              PLACEHOLDER: "Additional information (optional)"
+              STYLE: "long" # the style of the modal question (long allows for spacing)
+              REQUIRED: False # whether the question is required or not (default is True)
+
+Approval:
+    ACCEPT_COLOR: "green" # green, red, blurple, gray
+    ACCEPT_EMOJI: "✅" # The emoji that will be displayed on the button
+    ACCEPT_LABEL: "Accept" # The text that will be displayed on the button
+    DENY_COLOR: "gray" # green, red, blurple, gray
+    DENY_EMOJI: "❌" # The emoji that will be displayed on the button
+    DENY_LABEL: "Deny" # The text that will be displayed on the button
